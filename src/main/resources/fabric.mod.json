@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "somethingsweaponry",
+  "version": "${version}",
+  "name": "SomethingsWeponry",
+  "description": "Add more weapons",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/somethingsweaponry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "vao211.somethingsweaponry.client.SomethingsweaponryDataGenerator"
+    ],
+    "client": [
+      "vao211.somethingsweaponry.client.SomethingsweaponryClient"
+    ],
+    "main": [
+      "vao211.somethingsweaponry.Somethingsweaponry"
+    ]
+  },
+  "mixins": [
+    "somethingsweaponry.mixins.json",
+    {
+      "config": "somethingsweaponry.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,21 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DID",
+    "DID",
+    "DID"
+  ],
+  "key":{
+    "D" : {
+      "item": "minecraft:diamond"
+    },
+    "I" : {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "somethingsweaponry:oblivion_ingot",
+    "count": 2
+  }
+}
