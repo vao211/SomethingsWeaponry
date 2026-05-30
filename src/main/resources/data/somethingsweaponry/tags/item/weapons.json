@@ -1,6 +1,7 @@
 ﻿{
   "replace": false,
   "values": [
-    "#somethingsweaponry:swords"
+    "#somethingsweaponry:swords",
+    "#somethingsweaponry:daggers"
   ]
 }

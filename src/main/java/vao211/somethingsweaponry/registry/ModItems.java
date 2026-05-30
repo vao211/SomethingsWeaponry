@@ -8,10 +8,10 @@ import net.minecraft.util.Identifier;
 import vao211.somethingsweaponry.Somethingsweaponry;
 import vao211.somethingsweaponry.config.WeaponConfig;
 import vao211.somethingsweaponry.item.ModToolMaterials;
+import vao211.somethingsweaponry.item.OblivionDagger;
 import vao211.somethingsweaponry.item.OblivionSword;
 
 public class ModItems {
-
     public static final Item OBLIVION_INGOT = new Item(new Item.Settings());
 
     public static final Item OBLIVION_SWORD = new OblivionSword(new Item.Settings().attributeModifiers(
@@ -21,9 +21,17 @@ public class ModItems {
                     calcSpeed(WeaponConfig.oblivionSwordAttackSpeed)
             )
     ));
+    public static final Item OBLIVION_DAGGER = new OblivionDagger(new Item.Settings().attributeModifiers(
+            SwordItem.createAttributeModifiers(
+                    ModToolMaterials.OBLIVION,
+                    calcDamage(WeaponConfig.oblivionDaggerDamage, ModToolMaterials.OBLIVION.getAttackDamage()),
+                    calcSpeed(WeaponConfig.oblivionDaggerAttackSpeed)
+                    )
+    ));
     public static void registerModItems() {
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_ingot"), OBLIVION_INGOT);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_sword"), OBLIVION_SWORD);
+        Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_dagger"), OBLIVION_DAGGER);
     }
     private static int calcDamage(float finalDamage, float materialDamage) {
         return (int) (finalDamage - materialDamage - 1.0f);

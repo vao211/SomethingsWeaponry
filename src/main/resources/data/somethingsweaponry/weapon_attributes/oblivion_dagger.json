@@ -1,0 +1,7 @@
+{
+  "parent": "bettercombat:sword",
+  "attributes": {
+    "attack_range": 2.0,
+    "pose": "one_handed_sword"
+  }
+}

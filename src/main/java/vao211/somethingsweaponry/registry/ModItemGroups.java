@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OBLIVION_INGOT);
                         entries.add(ModItems.OBLIVION_SWORD);
+                        entries.add(ModItems.OBLIVION_DAGGER);
                     })
                     .build()
     );
