@@ -1,7 +1,9 @@
 {
   "parent": "bettercombat:sword",
   "attributes": {
+    "category": "sword",
     "attack_range": 3.0,
-    "pose": "one_handed_sword"
+    "pose": "two_handed_sword",
+    "two_handed": true
   }
 }
