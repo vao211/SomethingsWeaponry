@@ -2,6 +2,13 @@
   "replace": false,
   "values": [
     "#somethingsweaponry:swords",
-    "#somethingsweaponry:daggers"
+    "#somethingsweaponry:daggers",
+    "#somethingsweaponry:heavy_swords",
+    "#somethingsweaponry:axes",
+    "#somethingsweaponry:heavy_axes",
+    "#somethingsweaponry:halberds",
+    "#somethingsweaponry:battle_hammer",
+    "#somethingsweaponry:tridents",
+    "#somethingsweaponry:spear"
   ]
 }

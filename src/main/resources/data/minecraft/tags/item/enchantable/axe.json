@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#somethingsweaponry:axes",
+    "#somethingsweaponry:heavy_axes",
+    "#somethingsweaponry:halberds",
+    "#somethingsweaponry:battle_hammers"
+  ]
+}
