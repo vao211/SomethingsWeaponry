@@ -1,0 +1,9 @@
+{
+  "parent": "bettercombat:axe",
+  "attributes": {
+    "category": "axe",
+    "attack_range": 3.0,
+    "pose": "two_handed_sword",
+    "two_handed": false
+  }
+}

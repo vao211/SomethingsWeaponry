@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "OO",
+    "OS",
+    " S"
+  ],
+  "key": {
+    "O" : {
+      "item": "somethingsweaponry:oblivion_ingot"
+    },
+    "S" : {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "somethingsweaponry:oblivion_axe",
+    "count": 1
+  }
+}
