@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "somethingsweaponry:item/oblivion_blade"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "somethingsweaponry:item/oblivion_blade_blocking"
+    }
+  ]
+}

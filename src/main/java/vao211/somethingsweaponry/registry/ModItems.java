@@ -8,10 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import vao211.somethingsweaponry.Somethingsweaponry;
 import vao211.somethingsweaponry.config.WeaponConfig;
-import vao211.somethingsweaponry.item.ModToolMaterials;
-import vao211.somethingsweaponry.item.OblivionAxe;
-import vao211.somethingsweaponry.item.OblivionDagger;
-import vao211.somethingsweaponry.item.OblivionSword;
+import vao211.somethingsweaponry.item.*;
 
 public class ModItems {
     public static final Item OBLIVION_INGOT = new Item(new Item.Settings());
@@ -30,7 +27,6 @@ public class ModItems {
                     calcSpeed(WeaponConfig.oblivionDaggerAttackSpeed)
                     )
     ));
-
     public static final Item OBLIVION_AXE = new OblivionAxe(new Item.Settings().attributeModifiers(
             AxeItem.createAttributeModifiers(
                     ModToolMaterials.OBLIVION,
@@ -38,12 +34,19 @@ public class ModItems {
                     calcSpeed(WeaponConfig.oblivionAxeAttackSpeed)
             )
     ));
-
+    public static final Item OBLIVION_BLADE = new OblivionBlade(new Item.Settings().attributeModifiers(
+            AxeItem.createAttributeModifiers(
+                    ModToolMaterials.OBLIVION,
+                    calcDamage(WeaponConfig.oblivionBladeDamage, ModToolMaterials.OBLIVION.getAttackDamage()),
+                    calcSpeed(WeaponConfig.oblivionBladeAttackSpeed)
+            )
+    ));
     public static void registerModItems() {
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_ingot"), OBLIVION_INGOT);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_sword"), OBLIVION_SWORD);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_dagger"), OBLIVION_DAGGER);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_axe"), OBLIVION_AXE);
+        Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_blade"), OBLIVION_BLADE);
     }
     private static int calcDamage(float finalDamage, float materialDamage) {
         return (int) (finalDamage - materialDamage - 1.0f);

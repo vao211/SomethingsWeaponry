@@ -7,7 +7,7 @@ public class WeaponConfig extends MidnightConfig {
     @Entry(category = "weapons")
     public static float oblivionSwordDamage = 8.0f;
     @Entry(category = "weapons")
-    public static float oblivionSwordAttackSpeed = 1.3f;
+    public static float oblivionSwordAttackSpeed = 1.5f;
     @Entry(category = "weapons")
     public static float oblivionDaggerDamage = 6.0f;
     @Entry(category = "weapons")
@@ -16,5 +16,8 @@ public class WeaponConfig extends MidnightConfig {
     public static float oblivionAxeDamage = 10.0f;
     @Entry(category = "weapons")
     public static float oblivionAxeAttackSpeed = 1.0f;
-
+    @Entry(category = "weapons")
+    public static float oblivionBladeDamage = 9.0f;
+    @Entry(category = "weapons")
+    public static float oblivionBladeAttackSpeed = 1.3f;
 }

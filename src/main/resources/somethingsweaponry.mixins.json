@@ -4,6 +4,7 @@
   "package": "vao211.somethingsweaponry.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

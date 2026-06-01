@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OBLIVION_SWORD);
                         entries.add(ModItems.OBLIVION_DAGGER);
                         entries.add(ModItems.OBLIVION_AXE);
+                        entries.add(ModItems.OBLIVION_BLADE);
                     })
                     .build()
     );
