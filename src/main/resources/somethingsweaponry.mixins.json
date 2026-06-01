@@ -4,7 +4,8 @@
   "package": "vao211.somethingsweaponry.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "BackstabMixin"
   ],
   "injectors": {
     "defaultRequire": 1

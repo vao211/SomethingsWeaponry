@@ -11,6 +11,8 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class BladeItem extends SwordItem {
+    //Block attack for 3 attack in 3s (cd: 2s)
+    //Logic in PlayerEntityMixin
     public BladeItem(ToolMaterial toolMaterial, Settings settings){
         super(toolMaterial, settings);
     }
