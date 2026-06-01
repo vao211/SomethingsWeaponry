@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OBLIVION_DAGGER);
                         entries.add(ModItems.OBLIVION_AXE);
                         entries.add(ModItems.OBLIVION_BLADE);
+                        entries.add(ModItems.OBLIVION_HEAVY_AXE);
                     })
                     .build()
     );
