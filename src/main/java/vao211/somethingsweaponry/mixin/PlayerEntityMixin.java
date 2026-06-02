@@ -59,30 +59,4 @@ public abstract class PlayerEntityMixin {
             }
         }
     }
-
-    //---------------------------
-    // HeavyAxe Empowered attack
-    //---------------------------
-    @ModifyVariable(method = "damage", at = @At("HEAD"), argsOnly = true)
-    private float somethingsweaponry$applyHeavyAxeDamage(float amount, DamageSource source) {
-        LivingEntity victim = (LivingEntity) (Object) this;
-        if (source.getAttacker() instanceof PlayerEntity attacker) {
-            ItemStack weapon = attacker.getMainHandStack();
-            if (weapon.getItem() instanceof HeavyAxeItem heavyAxe) {
-                NbtComponent customData = weapon.get(DataComponentTypes.CUSTOM_DATA);
-                if (customData != null && customData.getNbt().getBoolean("Empowered")) {
-                    //100tick
-                    attacker.getItemCooldownManager().set(heavyAxe, 100);
-                    weapon.remove(DataComponentTypes.CUSTOM_DATA);
-                    if (!victim.getWorld().isClient()) {
-                        ServerWorld serverWorld = (ServerWorld) victim.getWorld();
-                        serverWorld.spawnParticles(ParticleTypes.EXPLOSION, victim.getX(), victim.getBodyY(0.5), victim.getZ(), 1, 0.0, 0.0, 0.0, 0.0);
-                        serverWorld.playSound(null, victim.getBlockPos(), SoundEvents.ENTITY_GENERIC_EXPLODE.value(), SoundCategory.PLAYERS, 1.0f, 1.2f);
-                    }
-                    return amount * 2.0f;
-                }
-            }
-        }
-        return amount;
-    }
 }

@@ -4,20 +4,17 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import vao211.somethingsweaponry.util.IEmpoweredEntity;
 
 public class HeavyAxeItem extends AxeItem {
+    //Right Click to get Empowered attack (x2 dmg)
+    //Logic in HeavyAxePlayerMixin, HeavyAxeVictimMixin
     public HeavyAxeItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
