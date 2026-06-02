@@ -7,7 +7,8 @@
     "PlayerEntityMixin",
     "BackstabMixin",
     "HeavyAxePlayerMixin",
-    "HeavyAxeVictimMixin"
+    "HeavyAxeVictimMixin",
+    "HeavySwordMixin"
   ],
   "injectors": {
     "defaultRequire": 1

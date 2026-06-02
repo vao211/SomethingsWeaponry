@@ -49,6 +49,14 @@ public class ModItems {
                     calcSpeed(WeaponConfig.oblivionHeavyAxeAttackSpeed)
             )
     ));
+
+    public static final Item OBLIVION_HEAVY_SWORD = new OblivionHeavySword(new Item.Settings().attributeModifiers(
+            AxeItem.createAttributeModifiers(
+                    ModToolMaterials.OBLIVION,
+                    calcDamage(WeaponConfig.oblivionHeavySwordDamage, ModToolMaterials.OBLIVION.getAttackDamage()),
+                    calcSpeed(WeaponConfig.oblivionHeavySwordAttackSpeed)
+            )
+    ));
     public static void registerModItems() {
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_ingot"), OBLIVION_INGOT);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID, "oblivion_sword"), OBLIVION_SWORD);
@@ -56,6 +64,7 @@ public class ModItems {
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_axe"), OBLIVION_AXE);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_blade"), OBLIVION_BLADE);
         Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_heavy_axe"), OBLIVION_HEAVY_AXE);
+        Registry.register(Registries.ITEM, Identifier.of(Somethingsweaponry.MOD_ID,"oblivion_heavy_sword"), OBLIVION_HEAVY_SWORD);
     }
     private static int calcDamage(float finalDamage, float materialDamage) {
         return (int) (finalDamage - materialDamage - 1.0f);
