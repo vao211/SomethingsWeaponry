@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OBLIVION_BLADE);
                         entries.add(ModItems.OBLIVION_HEAVY_AXE);
                         entries.add(ModItems.OBLIVION_HEAVY_SWORD);
+                        entries.add(ModItems.OBLIVION_BATTLE_HAMMER);
                     })
                     .build()
     );

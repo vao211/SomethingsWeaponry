@@ -1,0 +1,9 @@
+{
+  "parent": "bettercombat:hammer",
+  "attributes": {
+    "category": "hammer",
+    "attack_range": 3.5,
+    "pose": "two_handed_heavy",
+    "two_handed": true
+  }
+}

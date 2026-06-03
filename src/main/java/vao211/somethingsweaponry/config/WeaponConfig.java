@@ -21,13 +21,18 @@ public class WeaponConfig extends MidnightConfig {
     @Entry(category = "weapons")
     public static float oblivionBladeAttackSpeed = 1.3f;
     @Entry(category = "weapons")
-    public static float oblivionHeavyAxeDamage = 12.0f;
+    public static float oblivionHeavyAxeDamage = 13.0f;
     @Entry(category = "weapons")
     public static float oblivionHeavyAxeAttackSpeed = 0.8f;
     @Entry(category = "weapons")
     public static float oblivionHeavySwordDamage = 11.0f;
     @Entry(category = "weapons")
     public static float oblivionHeavySwordAttackSpeed = 1.0f;
+    @Entry(category = "weapons")
+    public static float oblivionBattleHammerDamage = 12.0f;
+    @Entry(category = "weapons")
+    public static float oblivionBattleHammerAttackSpeed = 0.9f;
+
 
 
 
