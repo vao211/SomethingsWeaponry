@@ -1,0 +1,9 @@
+{
+  "parent": "bettercombat:spear",
+  "attributes": {
+    "category": "spear",
+    "attack_range": 4,
+    "pose": "two_handed_polearm",
+    "two_handed": false
+  }
+}

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#somethingsweaponry:swords",
-    "#somethingsweaponry:dagger"
+    "#somethingsweaponry:daggers",
+    "#somethingsweaponry:spears"
   ]
 }
