@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " O ",
+    " I ",
+    " T "
+  ],
+  "key": {
+    "O" : {
+      "item": "somethingsweaponry:oblivion_ingot"
+    },
+    "I" : {
+      "item": "minecraft:iron_ingot"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    }
+  },
+  "result": {
+    "id": "somethingsweaponry:oblivion_trident",
+    "count": 1
+  }
+}

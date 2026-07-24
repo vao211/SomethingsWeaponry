@@ -1,0 +1,9 @@
+{
+  "parent": "bettercombat:trident",
+  "attributes": {
+    "category": "trident",
+    "attack_range": 4,
+    "pose": "two_handed_polearm",
+    "two_handed": false
+  }
+}

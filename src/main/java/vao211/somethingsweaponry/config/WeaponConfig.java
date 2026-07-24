@@ -36,8 +36,13 @@ public class WeaponConfig extends MidnightConfig {
     public static float oblivionSpearDamage = 8.0f;
     @Entry(category = "weapons")
     public static float oblivionSpearAttackSpeed = 1.3f;
-
-
-
+    @Entry(category = "weapons")
+    public static float oblivionTridentDamage = 10.0f;
+    @Entry(category = "weapons")
+    public static float oblivionTridentAttackSpeed = 1.1f;
+    @Entry(category = "weapons")
+    public static float oblivionHalberdDamage = 12.0f;
+    @Entry(category = "weapons")
+    public static float oblivionHalberdAttackSpeed = 0.9f;
 
 }

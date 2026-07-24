@@ -1,0 +1,9 @@
+{
+  "parent": "bettercombat:halberd",
+  "attributes": {
+    "category": "halberd",
+    "attack_range": 4,
+    "pose": "two_handed_polearm",
+    "two_handed": true
+  }
+}
